@@ -1,0 +1,18 @@
+<Project DefaultTargets = "About" xmlns = "http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<FirstName>Tony</FirstName>
+		<LastName>Galant</LastName>
+		<Age>25</Age>
+	</PropertyGroup>
+	<Target Name = "HelloWorld">
+		<Message Text = "Hello? World!"></Message>
+	</Target>
+	<Target Name = "Second">
+		<Message Text = "Goodbye World!"></Message>
+	</Target>
+	<Target Name = "About">
+		<Message Text = "$(FirstName)" Importance = "high"></Message>
+		<Message Text = "$(LastName)" Importance = "normal"></Message>
+		<Message Text = "$(Age)" Importance = "normal"></Message>		
+	</Target>
+</Project>
