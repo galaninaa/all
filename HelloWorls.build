@@ -1,4 +1,4 @@
-<Project DefaultTargets = "About" xmlns = "http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets = "Reserved" xmlns = "http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<FirstName>Tony</FirstName>
 		<LastName>Galant</LastName>
@@ -15,4 +15,7 @@
 		<Message Text = "$(LastName)" Importance = "normal"></Message>
 		<Message Text = "$(Age)" Importance = "normal"></Message>		
 	</Target>
+	<Target Name="Reserved">
+    <Message Text="MSBuildProjectFullPath : $(MSBuildProjectDefaultTargets)"></Message>
+  </Target>
 </Project>
